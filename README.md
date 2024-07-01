@@ -1,18 +1,12 @@
 # food_101_vision_project
+<h3>Abstract</h3>
+<p>Much research has been done on the classification of the food101 dataset, but much of this research which achieved an accuracy score of more than 90% explores heavyweight architecture such as EfficientNetB7, Visual Geometry Group19, ResNet-200, Inception v4, DenseNet-201, ResNeXt-101, MobileNet v3 and many more. This study explores the classification of the Food101 dataset using the EfficientNetB0 architecture. The research aims to balance model accuracy and computational efficiency, addressing the need for resource-constrained environments. Results demonstrate that the fine-tuned EfficientNetB0 model achieves an accuracy score of accuracy score of 97.54%, Top_k_categorical accuracy of 99.89%, precision of 98.21%, and recall of 97.02% in just 5 epochs. This research will contribute to advancements in dietary monitoring, food logging, and health-related technologies, enabling more accessible and practical solutions for consumers. The optimal number of layers to fine-tune for achieving perfect accuracy with EfficientNetB0 remains uncertain. It often involves trial and error to determine the best configuration for optimal results, presenting an opportunity for future research.</p>
 <img src="food101.jpg" alt="food101" width="800" height="400">
-<p>This project focuses on the Food-101 vision dataset, which consists of 101 food classes, each containing 1000 sample images. The goal is to classify these images into their respective categories and exceed the 77.2% accuracy achieved by a 2019 research paper. We aim to surpass this benchmark using the EfficientNetB0 model.</p>
-<h3>EfficientNetB0 Architecture</h3>
-<img src="The-detailed-architecture-of-EfficientNet-B0-EfficientNet-B0-consists-of-seven-blocks.png" alt="EfficientNetB0" width="700" height="350">
-<p></p>
-<h3>Resnet Architecture</h3>
-<img src="04-resnet-feature-extractor.png" alt="Resnet" width="700" height="350">
-<p>The research objectives are:</p>
-<ol>
-  <li>Employ Transfer Learning Models: Implement the EfficientNetB0 and ResNet50 transfer learning models to process the Food-101 dataset.</li>
-   <li>Optimize Model Performance: Fine-tune the EfficientNetB0 and ResNet50 models to achieve minimal loss and optimal accuracy.</li>
-   <li>Evaluate on New Test Data: Use the model.predict function to assess the performance of the fine-tuned models on a new test dataset.</li>
-   <li>Compare and Deploy Optimal Model: Analyze and compare the results of the CNN, EfficientNetB0, and ResNet50 models, and deploy the model that provides the most optimal solution.</li>
-</ol>
+<h3>Summary of the research</h3>
+<p>The Food101 dataset is a very popular dataset for demonstrating the potency of transfer learning. Much research has been done on the classification of food101, but those that achieve high accuracy results utilize heavyweight architecture, which requires high computational resources.  The research showed that lightweight convolutional architecture, such as fine-tuned EfficientNetB0 can achieve much better results than most heavyweight architectures. Besides, the research also balanced model accuracy and computational efficiency, addressing the possibility of achieving high-accuracy results in resource-constrained environments in less than 6 epochs.</p>
+<p>The food101 dataset used for this research contains 101 food classes, and each class has 1000 images. Five experiments were performed to determine the optimal solution. The first two experiments used 10% of the training data, which achieved an accuracy score of 77.68% in 5 epochs after fine-tuning the last 5 layers. The last three experiments used the entire data. The optimal solution is achieved by fine-tuning the last 100 layers of the EfficientNetB0. The model achieved an accuracy of 97.54% in just 5 epochs.</p>
+<p>The research demonstrated the potency of EfficientNetB0 on image classification. It also reveals that it is possible to achieve an accuracy of 100% with lightweight architecture. The major limitation is to determine the optimal number of layers to fine-tune to achieve 100% accuracy with less than 5 epochs, presenting an opportunity for future research.</p>
+
 
 
 
